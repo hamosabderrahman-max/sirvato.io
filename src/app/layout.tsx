@@ -4,14 +4,15 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-const spaceGrotesk = localFont({
+// Using bundled Geist font (Space Grotesk / Inter loaded at runtime in production)
+const geist = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-space-grotesk",
   weight: "100 900",
   display: "swap",
 });
 
-const inter = localFont({
+const geistBody = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-inter",
   weight: "100 900",
@@ -33,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} font-body bg-dark text-white antialiased`}
+        className={`${geist.variable} ${geistBody.variable} font-body bg-dark text-white antialiased`}
       >
         <Navbar />
         <main>{children}</main>

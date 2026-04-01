@@ -34,7 +34,9 @@ function Counter({ value, suffix, prefix }: { value: number; suffix: string; pre
     return () => clearInterval(timer);
   }, [inView, value]);
 
-  const display = value % 1 !== 0 ? count.toFixed(1) : Math.floor(count).toLocaleString();
+  const display = value % 1 !== 0
+    ? count.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+    : Math.floor(count).toLocaleString();
 
   return (
     <span ref={ref}>
