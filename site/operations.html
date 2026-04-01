@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIRVATO — OPERATIONS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">SIRVATO</a>
+    <nav class="site-nav">
+      <a href="core.html">CORE</a>
+      <a href="superforma.html">SUPERFORMA</a>
+      <a href="operations.html">OPERATIONS</a>
+      <a href="interface.html">INTERFACE</a>
+      <a href="expansion.html">EXPANSION</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <span class="domain-badge">Domain 03 — OPERATIONS</span>
+<h1>OPERATIONS</h1>
+<p>Execution layer. OPERATIONS defines how SIRVATO acts, not what it thinks.</p>
+<hr />
+<h2>Purpose</h2>
+<p>Every system must execute. OPERATIONS is the domain that turns principle into action.</p>
+<p>It governs:</p>
+<ul><li>How content is built</li><li>How the site is generated</li><li>How changes propagate</li><li>How output is validated</li></ul>
+<h2>Build Protocol</h2>
+<ol><li>Read <code>sirvato.config.json</code></li><li>For each page entry, locate the Markdown source</li><li>Convert Markdown to clean HTML</li><li>Inject into <code>template.html</code> — replacing title and content placeholders</li><li>Write to <code>/site/{output}</code></li><li>Validate links, structure, and coherence</li></ol>
+<h2>Rebuild Triggers</h2>
+<p>The site rebuilds automatically when any of the following change:</p>
+<ul><li>A Markdown file in <code>/content/</code></li><li><code>sirvato.config.json</code></li><li><code>template.html</code></li><li><code>style.css</code></li></ul>
+<h2>Output Standards</h2>
+<table><thead><tr><th>Standard</th><th>Requirement</th></tr></thead><tbody><tr><td>Determinism</td><td>Same input always produces same output</td></tr><tr><td>Cleanliness</td><td>No broken tags, no orphaned attributes</td></tr><tr><td>Consistency</td><td>All pages use the same template and stylesheet</td></tr><tr><td>Deployment</td><td>Output is immediately deployable via GitHub Pages</td></tr></tbody></table>
+<h2>Operational Rules</h2>
+<ul><li>No external frameworks.</li><li>No build-time dependencies beyond Node.js core.</li><li>No silent failures. Errors are reported explicitly.</li></ul>
+<hr />
+<blockquote><p>OPERATIONS makes SIRVATO real. Without it, everything else is theory.</p></blockquote>
+  </main>
+
+  <footer class="site-footer">
+    <span>SIRVATO — Sistema Unico Operativo</span>
+  </footer>
+</body>
+</html>

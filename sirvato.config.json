@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "site": {
+    "name": "SIRVATO",
+    "description": "Sistema Unico Operativo"
+  },
+  "domains": ["CORE", "SUPERFORMA", "OPERATIONS", "INTERFACE", "EXPANSION"],
+  "pages": [
+    {
+      "id": "index",
+      "title": "SIRVATO — Sistema Unico Operativo",
+      "domain": "ROOT",
+      "source": "content/index.md",
+      "output": "index.html"
+    },
+    {
+      "id": "core",
+      "title": "SIRVATO — CORE",
+      "domain": "CORE",
+      "source": "content/core.md",
+      "output": "core.html"
+    },
+    {
+      "id": "superforma",
+      "title": "SIRVATO — SUPERFORMA",
+      "domain": "SUPERFORMA",
+      "source": "content/superforma.md",
+      "output": "superforma.html"
+    },
+    {
+      "id": "operations",
+      "title": "SIRVATO — OPERATIONS",
+      "domain": "OPERATIONS",
+      "source": "content/operations.md",
+      "output": "operations.html"
+    },
+    {
+      "id": "interface",
+      "title": "SIRVATO — INTERFACE",
+      "domain": "INTERFACE",
+      "source": "content/interface.md",
+      "output": "interface.html"
+    },
+    {
+      "id": "expansion",
+      "title": "SIRVATO — EXPANSION",
+      "domain": "EXPANSION",
+      "source": "content/expansion.md",
+      "output": "expansion.html"
+    }
+  ]
+}
